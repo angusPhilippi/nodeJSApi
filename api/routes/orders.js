@@ -8,7 +8,7 @@ router.get('/:orderId', checkAuth, OrdersController.orders_get_one);
 
 router.get("/", checkAuth, OrdersController.orders_get_all);
 
-router.post('/', checkAuth, OrdersController.orders_delete);
+router.post('/', checkAuth, OrdersController.orders_post);
 
 router.delete("/:orderId", checkAuth, OrdersController.orders_delete);
 
